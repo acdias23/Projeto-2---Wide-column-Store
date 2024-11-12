@@ -12,7 +12,10 @@ Sofia Fernandes RA: 22.122.082-5
 ## Instruções para rodar o banco
 
 $env:ASTRA_DB_ID = "DatabaseID"
+<br>
 $env:ASTRA_DB_REGION = "localização"
+<br>
 $env:ASTRA_DB_KEYSPACE = "keyspace"
+<br>
 $env:ASTRA_DB_APPLICATION_TOKEN = "token"
 
