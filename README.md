@@ -18,7 +18,7 @@ $env:ASTRA_DB_APPLICATION_TOKEN = "token"
 ```
 
 ## Tabelas
- ###Aluno
+ #Aluno
  ![image](https://github.com/user-attachments/assets/3aa6c194-eea0-4968-8786-6d9e38c5d4f7)
 
  ###Curso
