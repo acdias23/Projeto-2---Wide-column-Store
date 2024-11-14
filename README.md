@@ -22,6 +22,9 @@ Aluno
  ![image](https://github.com/user-attachments/assets/3aa6c194-eea0-4968-8786-6d9e38c5d4f7)
 
 Curso
+
+
+
  ![image](https://github.com/user-attachments/assets/d2731328-2573-4eec-b58c-a764299abfa5)
 
 Departamento
