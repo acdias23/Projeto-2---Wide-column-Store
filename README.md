@@ -1,4 +1,4 @@
-# Projeto-1---Document-Store
+# Projeto-2---Wide-column-Store
 
 ## Integrantes
 Ana Clara Dias Cruz RA: 22.122.073-4
