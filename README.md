@@ -11,10 +11,14 @@ Sofia Fernandes RA: 22.122.082-5
 
 ## Instruções para rodar o banco
 ```
+Rode no terminal:
 $env:ASTRA_DB_ID = "DatabaseID"
 $env:ASTRA_DB_REGION = "localização"
 $env:ASTRA_DB_KEYSPACE = "keyspace"
 $env:ASTRA_DB_APPLICATION_TOKEN = "token"
+
+Especifique na linha 70 do código:
+	cluster.Keyspace = " " // Especifique o keyspace aqui
 ```
 
 ## Tabelas
