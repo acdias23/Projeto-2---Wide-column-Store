@@ -1,0 +1,87 @@
+CREATE TABLE aluno (
+    aluno_id uuid PRIMARY KEY,
+    nome text,
+    curso_id uuid,
+    data_ingresso text
+);
+
+CREATE TABLE professor (
+    professor_id uuid PRIMARY KEY,
+    nome text,
+    departamento_id uuid
+);
+
+CREATE TABLE curso (
+    curso_id uuid PRIMARY KEY,
+    nome text,
+    departamento_id uuid
+);
+
+CREATE TABLE departamento (
+    departamento_id uuid PRIMARY KEY,
+    nome text,
+    chefe_id uuid
+);
+
+
+CREATE TABLE disciplina (
+    disciplina_id uuid PRIMARY KEY,
+    nome text,
+    curso_id uuid,
+    professor_id uuid
+);
+
+
+CREATE TABLE historico_escolar (
+    aluno_id uuid,
+    disciplina_id uuid,
+    semestre int,
+    ano int,
+    nota_final float,
+    disciplina_nome text,
+    PRIMARY KEY (disciplina_id, aluno_id, semestre, ano)
+);
+
+
+
+
+
+CREATE TABLE disciplina_ministrada (
+    professor_id uuid,
+    disciplina_id uuid,
+    semestre int,
+    ano int,
+    disciplina_nome text,
+    PRIMARY KEY (professor_id, disciplina_id, semestre, ano)
+);
+
+
+CREATE TABLE matriz_curricular (
+    curso_id uuid,
+    disciplina_id uuid,
+    semestre int,
+    PRIMARY KEY (curso_id, disciplina_id)
+);
+
+
+CREATE TABLE alunos_aprovados (
+    aluno_id UUID,
+    curso_id UUID,
+    nome TEXT,
+    disciplina_id UUID,
+    semestre INT,
+    ano INT,
+    nota_final DECIMAL,
+    PRIMARY KEY ((aluno_id), ano, semestre, disciplina_id)
+);
+
+
+CREATE TABLE grupo_tcc (
+    tcc_id uuid PRIMARY KEY,
+    aluno1_id UUID,
+    aluno2_id UUID,
+    aluno3_id UUID,
+    orientador_id UUID,
+
+);
+

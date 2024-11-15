@@ -1,0 +1,28 @@
+--1
+SELECT disciplina_id, disciplina_nome, semestre, ano, nota_final 
+FROM historico_escolar 
+WHERE aluno_id = b130c667-9d6b-11ef-8a41-14857fdef167 ALLOW FILTERING;  --id do aluno a ser buscado
+
+--2
+SELECT disciplina_id, disciplina_nome, semestre, ano 
+FROM disciplina_ministrada 
+WHERE professor_id = 6e220579-9d6e-11ef-9682-14857fdef167 ALLOW FILTERING; --id do professor a ser buscado
+
+--3
+SELECT nome, aluno_id, curso_id, disciplina_id, nota_final, semestre, ano
+FROM alunos_aprovados
+WHERE semestre = 1
+  AND ano = 2012
+  AND nota_final > 5
+ALLOW FILTERING
+ORDER BY aluno_id, disciplina_id;
+
+--4
+SELECT chefe_id, nome 
+FROM departamento;
+
+--5
+-- o grupo é obrigatório ser composto por exatamente 3 alunos
+SELECT tcc_id, aluno1_id, aluno2_id, aluno3_id, orientador_id 
+FROM grupo_tcc;
+
